@@ -1,4 +1,4 @@
-## Leveraging Low Level Languages in Android
+
 - Android Studio supports CMake: Which is useful for cross-platform projects
 - React Native, dependencies or frameworks you download from NPM are actually just Native apps with bindings that allow invokation from the JavaScript side of the system.
 - Pick any react-native dependency and look at it's source code in github for example, you will almost always find an `android/` folder.

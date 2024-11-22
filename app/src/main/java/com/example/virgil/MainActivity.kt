@@ -15,18 +15,15 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.virgil.ui.theme.VirgilTheme
 
 class MainActivity : ComponentActivity() {
-    external fun sayHello():String
     external fun prompt()
-    external fun play()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
         System.loadLibrary("virgil")
-        Log.d("Muga", sayHello())
-        play()
-        Log.d("Muga", prompt().toString())
+
+        prompt()
 
 
         setContent {
